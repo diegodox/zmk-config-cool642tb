@@ -86,6 +86,20 @@
             bindings = <&kp N9>, <&kp RPAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        jis_LBKT: jis_LBKT {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_LBKT";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp LBRC>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        jis_RBKT: jis_RBKT {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_RBKT";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT>, <&kp RBRC>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         jis_BACKQUOTE: jis_BACKQUOTE {
             compatible = "zmk,behavior-mod-morph";
             label = "jis_BACKQUOTE";
@@ -102,7 +116,7 @@
             bindings = <
 &kp Q             &kp W  &kp E  &kp R         &kp T                                                      &kp Y            &kp U  &kp I      &kp O       &kp P
 &mt LCTRL A       &kp S  &kp D  &kp F         &kp G               &none             &kp INTERNATIONAL_4  &kp H            &kp J  &kp K      &kp L       &mt RCTRL SEMICOLON
-&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V         &kp B               &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp N            &kp M  &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT SLASH
+&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V         &kp B               &kp jis_LBKT      &kp jis_RBKT         &kp N            &kp M  &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT SLASH
 &none             &none  &none  &kp LEFT_GUI  &lt 1 INT_MUHENKAN  &lt 3 SPACE       &lt 4 ENTER          &lt 2 BACKSPACE                                &kp MINUS
             >;
 
@@ -113,7 +127,7 @@
             bindings = <
 &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                               &kp LS(N6)  &kp LS(N7)  &kp LS(N8)     &kp LS(N9)      &kp LS(N0)
 &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &none                 &none                  &none       &none       &none          &none           &kp COLON
-&kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &none       &none       &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
+&kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp LS(jis_LBKT)      &kp LS(jis_RBKT)  &none       &none       &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
 &none       &none       &none       &none       &none       &none                 &none                  &kp ESCAPE                                             &kp LS(MINUS)
             >;
 
@@ -124,7 +138,7 @@
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                       &none     &kp U           &kp I          &kp O           &kp P
 &none   &none   &none   &none   &none       &none           &none            &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT       &kp COLON
-&none   &none   &none   &none   &none       &kp LEFT_BRACE  &kp RIGHT_BRACE  &none     &none           &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
+&none   &none   &none   &none   &none       &kp jis_LBKT  &kp jis_RBKT       &none     &none           &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
 &none   &none   &none   &none   &kp ESCAPE  &none           &none            &none                                                    &kp LS(MINUS)
             >;
 
