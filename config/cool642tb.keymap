@@ -44,6 +44,55 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+        jis_AT: jis_AT {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_AT";
+            #binding-cells = <0>;
+            bindings = <&kp N2>, <&kp LBKT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        jis_QUOTE: jis_QUOTE {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp QUOT>, <&kp N2>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        jis_AMP: jis_AMP {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_AMP";
+            #binding-cells = <0>;
+            bindings = <&kp N6>, <&kp AMPS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        jis_SQUOTE: jis_SQUOTE {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_SQUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp N7>, <&kp SQT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        jis_LPAREN: jis_LPAREN {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_LPAREN";
+            #binding-cells = <0>;
+            bindings = <&kp N8>, <&kp LPAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        jis_RPAREN: jis_RPAREN {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_RPAREN";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&kp RPAR>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        jis_BACKQUOTE: jis_BACKQUOTE {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_BACKQUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp GRAVE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
