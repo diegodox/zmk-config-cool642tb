@@ -60,6 +60,13 @@
             bindings = <&kp SEMI>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        mt_rctrl_jis_COLON: mt_rctrl_jis_COLON {
+            compatible = "zmk,behavior-mod-tap";
+            #binding-cells = <0>;
+            label = "mt_rctrl_jis_COLON";
+            tapping-term-ms = <200>;
+            bindings = <&kp jis_COLON>, <&kp RCTRL>;
+        };
     };
 
     keymap {
@@ -68,7 +75,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W  &kp E  &kp R         &kp T                                                      &kp Y            &kp U  &kp I      &kp O       &kp P
-&mt LCTRL A       &kp S  &kp D  &kp F         &kp G               &none             &kp INTERNATIONAL_4  &kp H            &kp J  &kp K      &kp L       &mt RCTRL SEMICOLON
+&mt LCTRL A       &kp S  &kp D  &kp F         &kp G               &none             &kp INTERNATIONAL_4  &kp H            &kp J  &kp K      &kp L       &mt_ctrl_jis_COLON
 &mt LEFT_SHIFT Z  &kp X  &kp C  &kp V         &kp B               &jis_LBKT         &jis_RBKT            &kp N            &kp M  &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT SLASH
 &none             &none  &none  &kp LEFT_GUI  &lt 1 INT_MUHENKAN  &lt 3 SPACE       &lt 4 ENTER          &lt 2 BACKSPACE                                &kp MINUS
             >;
