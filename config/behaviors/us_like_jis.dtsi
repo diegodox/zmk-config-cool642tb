@@ -26,7 +26,7 @@
         };
 
         // 1, !
-        jis_N1: us_N1 {
+        jis_N1: jis_N1 {
             compatible = "zmk,behavior-mod-morph";
             label = "us_N1";
             #binding-cells = <0>;
@@ -34,7 +34,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // 2, @
-        jis_N2: us_N2 {
+        jis_N2: jis_N2 {
             compatible = "zmk,behavior-mod-morph";
             label = "us_N2";
             #binding-cells = <0>;
@@ -42,7 +42,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // 3, #
-        jis_N3: us_N3 {
+        jis_N3: jis_N3 {
             compatible = "zmk,behavior-mod-morph";
             label = "us_N3";
             #binding-cells = <0>;
@@ -50,7 +50,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // 4, $
-        jis_N4: us_N4 {
+        jis_N4: jis_N4 {
             compatible = "zmk,behavior-mod-morph";
             label = "us_N4";
             #binding-cells = <0>;
@@ -58,7 +58,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // 5, %
-        jis_N5: us_N5 {
+        jis_N5: jis_N5 {
             compatible = "zmk,behavior-mod-morph";
             label = "us_N5";
             #binding-cells = <0>;
@@ -66,7 +66,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // 6, ^
-        jis_N6: us_N6 {
+        jis_N6: jis_N6 {
             compatible = "zmk,behavior-mod-morph";
             label = "us_N6";
             #binding-cells = <0>;
@@ -74,7 +74,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // 7, &
-        jis_N7: us_N7 {
+        jis_N7: jis_N7 {
             compatible = "zmk,behavior-mod-morph";
             label = "us_N7";
             #binding-cells = <0>;
@@ -82,7 +82,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // 8, *
-        jis_N8: us_N8 {
+        jis_N8: jis_N8 {
             compatible = "zmk,behavior-mod-morph";
             label = "us_N8";
             #binding-cells = <0>;
@@ -90,7 +90,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // 9, (
-        jis_N9: us_N9 {
+        jis_N9: jis_N9 {
             compatible = "zmk,behavior-mod-morph";
             label = "us_N9";
             #binding-cells = <0>;
@@ -98,7 +98,7 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         // 0, )
-        jis_N0: us_N0 {
+        jis_N0: jis_N0 {
             compatible = "zmk,behavior-mod-morph";
             label = "us_N0";
             #binding-cells = <0>;
