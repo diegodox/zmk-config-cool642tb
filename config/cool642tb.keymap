@@ -60,6 +60,13 @@
             bindings = <&kp SEMI>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold Tap";
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
