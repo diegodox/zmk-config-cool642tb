@@ -61,14 +61,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Hold Tap";
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&none &none>;
-        };
-
         // Define a custom hold-tap behavior for ; and Ctrl
         semicolon_ctrl: hold_tap {
             compatible = "zmk,behavior-hold-tap";
