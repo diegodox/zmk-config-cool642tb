@@ -4,10 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: telzo2000
       url-base: https://github.com/telzo2000
+    - name: diegodox
+      url-base: https://github.com/diegodox
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: diegodox
+      revision: behavior_tap_mod_sensitive
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: telzo2000
