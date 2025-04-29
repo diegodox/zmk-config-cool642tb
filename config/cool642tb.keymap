@@ -27,6 +27,12 @@
     };
 
     macros {
+        to_layer_0: to_layer_0 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TO_LAYER_0";
+        };
     };
 
     behaviors {
@@ -54,14 +60,6 @@
             bindings = <&kp SEMI>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        /* // mt ctrl, :(shift ;) */
-        /* mt_rctrl_jis_COLON: mt_ctrl_jis_COLON { */
-        /*     compatible = "zmk,behavior-mod-tap"; */
-        /*     #binding-cells = <0>; */
-        /*     label = "MT_CTRL_JIS_COLON"; */
-        /*     // tapping-term-ms = <200>; // ここは好みで */
-        /*     bindings = <&kp jis_COLON>, <&kp RCTRL>; */
-        /* }; */
     };
 
     keymap {
@@ -70,8 +68,8 @@
         default_layer {
             bindings = <
 &kp Q             &kp W  &kp E  &kp R         &kp T                                                      &kp Y            &kp U  &kp I      &kp O       &kp P
-&mt LCTRL A       &kp S  &kp D  &kp F         &kp G               &none             &kp INTERNATIONAL_4  &kp H            &kp J  &kp K      &kp L       &jis_COLON
-&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V         &kp B               &jis_LBKT         &jis_RBKT            &kp N            &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
+&mt LCTRL A       &kp S  &kp D  &kp F         &kp G               &none             &kp INTERNATIONAL_4  &kp H            &kp J  &kp K      &kp L       &mt RCTRL SEMICOLON
+&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V         &kp B               &jis_LBKT         &jis_RBKT            &kp N            &kp M  &kp COMMA  &kp PERIOD  &mt LEFT_SHIFT SLASH
 &none             &none  &none  &kp LEFT_GUI  &lt 1 INT_MUHENKAN  &lt 3 SPACE       &lt 4 ENTER          &lt 2 BACKSPACE                                &kp MINUS
             >;
 
@@ -80,10 +78,10 @@
 
         left {
             bindings = <
-&kp EXCL          &kp AT      &kp HASH    &kp DLR     &kp PERC                                                 &kp CIRC    &kp AMPS    &kp ASTRK      &kp LPAR        &kp RPAR
-&mt LCTRL N1      &kp N2      &kp N3      &kp N4      &kp N5      &none                 &none                  &none       &none       &none          &none           &mt RCTRL COLON
-&mt LEFT_SHIFT N6 &kp N7      &kp N8      &kp N9      &kp N0      &kp LBRC              &kp RBRC               &none       &none       &kp LS(COMMA)  &kp LS(PERIOD)  &mt RIGHT_SHIFT LS(SLASH)
-&none             &none       &none       &none       &none       &none                 &none                  &kp ESCAPE                                             &kp LS(MINUS)
+&kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                                               &kp LS(N6)  &kp LS(N7)  &kp LS(N8)     &kp LS(N9)      &kp LS(N0)
+&kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &none                 &none                  &none       &none       &none          &none           &kp COLON
+&kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp LBRC              &kp RBRC               &none       &none       &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
+&none       &none       &none       &none       &none       &none                 &none                  &kp ESCAPE                                             &kp LS(MINUS)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -91,10 +89,10 @@
 
         right {
             bindings = <
-&kp F1         &kp F2  &kp F3  &kp F4  &kp F5                                       &none     &kp U           &kp I          &kp O           &kp P
-&kp LTRL       &none   &none   &none   &none       &none           &none            &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT       &mt RCTRL COLON
-&kp LEFT_SHIFT &none   &none   &none   &none       &kp LBRC        &kp RBRC         &none     &none           &kp LS(COMMA)  &kp LS(PERIOD)  &mt RIGHT_SHIFT LS(SLASH)
-&none          &none   &none   &none   &kp ESCAPE  &none           &none            &none                                                    &kp LS(MINUS)
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                       &none     &kp U           &kp I          &kp O           &kp P
+&none   &none   &none   &none   &none       &none           &none            &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT       &kp COLON
+&none   &none   &none   &none   &none       &kp LBRC        &kp RBRC         &none     &none           &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
+&none   &none   &none   &none   &kp ESCAPE  &none           &none            &none                                                    &kp LS(MINUS)
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
