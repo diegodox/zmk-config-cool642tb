@@ -73,7 +73,7 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
-            bindings = <&jis_COLON 0>, <&mod_ctrl 0>;
+            bindings = <&mod_ctrl &jis_COLON >;
         };
     };
 
