@@ -60,6 +60,16 @@
             bindings = <&kp SEMI>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        tapmodcolon: tapmodcolon {
+            compatible = "zmk,behavior-tap-mod-sensitive";
+            label = "TAPMOD_COLON";
+            // tap shift hold
+            bindings = <
+                &kp SEMI
+                &kp COLON
+                &kp LCTRL
+            >;
+        };
     };
 
     keymap {
