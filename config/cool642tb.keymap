@@ -67,7 +67,7 @@
             label = "Semicolon Ctrl";
             flavor = "tap-preferred";
             tapping-term-ms = <200>; // Adjust as needed
-            bindings = <&kp SEMI &kp LEFT_CTRL>;
+            bindings = <&kp SEMI>, <&kp LEFT_CTRL>;
         };
 
         // Define a mod-morph behavior to send : when shift is held
