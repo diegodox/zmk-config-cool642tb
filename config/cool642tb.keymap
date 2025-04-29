@@ -66,6 +66,7 @@
             label = "Hold Tap";
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
+            bindings = <0 0>;
         };
     };
 
