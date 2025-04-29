@@ -65,6 +65,7 @@
         semicolon_ctrl: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "Semicolon Ctrl";
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>; // Adjust as needed
             bindings = <&kp SEMI>, <&kp LEFT_CTRL>;
