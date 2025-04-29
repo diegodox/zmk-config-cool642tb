@@ -61,11 +61,11 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         mt_rctrl_jis_COLON: mt_rctrl_jis_COLON {
-            compatible = "zmk,behavior-mod-tap";
+            compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
             label = "mt_rctrl_jis_COLON";
             tapping-term-ms = <200>;
-            bindings = <&kp jis_COLON>, <&kp RCTRL>;
+            bindings = <&jis_COLON>, <&kp RCTRL>;
         };
     };
 
