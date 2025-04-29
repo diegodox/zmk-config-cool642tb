@@ -62,18 +62,18 @@
         };
         mod_ctrl: mod_ctrl {
             compatible = "zmk,behavior-mod-momentary";
-            label = "MOD_CTRL";
+            label = "mod_ctrl";
             #binding-cells = <1>;
             bindings = <MOD_LCTL>;
         };
         mt_rctrl_jis_COLON: mt_rctrl_jis_COLON {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT_RCTRL_JIS_COLON";
+            label = "mt_rctrl_jis_COLON";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
-            bindings = <&mod_ctrl 0>, <&jis_COLON 0>;
+            bindings = <&jis_COLON 0>, <&mod_ctrl 0>;
         };
     };
 
