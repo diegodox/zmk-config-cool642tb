@@ -67,14 +67,20 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        lctrl_behavior: lctrl_behavior {
+            compatible = "zmk,behavior-momentary";
+            label = "LCTRL behavior";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL>;
+        };
+
         semicolon_colon_ctrl: semicolon_colon_ctrl {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
-            hold-trigger-key-positions = <0>;
-            bindings = <&kp LCTRL>, <&semicolon_colon_morph>;
+            bindings = <&lctrl_behavior>, <&semicolon_colon_morph>;
         };
     };
 
