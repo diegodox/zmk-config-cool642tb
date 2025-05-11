@@ -65,6 +65,7 @@
             label = "TAPMOD_COLON";
             // tap shift hold
             bindings = <&kp SEMI>, <&kp COLON>, <&kp LCTRL>;
+            tapping-term-ms = <200>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
