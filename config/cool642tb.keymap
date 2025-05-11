@@ -63,7 +63,7 @@
         tapmodcolon: tapmodcolon {
             compatible = "zmk,behavior-hold-tap-mod";
             label = "TAPMOD_COLON";
-            #binding-cells = <0>;
+            #binding-cells = <3>;
             // tap hold mod(shift)
             bindings = <
                 &kp SEMI
