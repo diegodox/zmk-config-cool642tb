@@ -65,7 +65,7 @@
             label = "TAPMOD_COLON";
             #binding-cells = <2>;
             // tap hold mod(shift)
-            bindings = <&jis_COLON>, <&kp LCTRL>;
+            bindings = <&jis_COLON 0>, <&kp LCTRL>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
