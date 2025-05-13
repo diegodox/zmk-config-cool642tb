@@ -61,17 +61,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         tapmodcolon: tapmodcolon {
-            compatible = "zmk,behavior-hold-tap-mod";
+            compatible = "zmk,behavior-hold-tap";
             label = "TAPMOD_COLON";
-            #binding-cells = <1>;
+            #binding-cells = <2>;
             // tap hold mod(shift)
-            bindings = <
-                &kp SEMI
-                &kp LCTRL
-                &kp COLON
-            >;
+            bindings = <&jis_COLON>, <&kp LCTRL>;
             tapping-term-ms = <200>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
         };
     };
 
