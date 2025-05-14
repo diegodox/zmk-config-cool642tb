@@ -77,14 +77,6 @@
             bindings = <&kp JP_RBRACKET>, <&kp JP_RBRACE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        // :
-        force_COLON: force_COLON {
-            compatible = "zmk,behavior-mod-morph";
-            label = "force_COLON";
-            #binding-cells = <0>;
-            bindings = <&kp JP_COLON>, <&kp JP_COLON>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
         // ;, shift: :
         jis_COLON: jis_COLON {
             compatible = "zmk,behavior-mod-morph";
