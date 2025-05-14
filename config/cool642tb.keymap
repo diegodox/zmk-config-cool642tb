@@ -65,7 +65,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "jis_COLON";
             #binding-cells = <0>;
-            bindings = <&kp SEMI>, <&force_COLON>;
+            bindings = <&kp SEMI>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         tapmodcolon: tapmodcolon {
