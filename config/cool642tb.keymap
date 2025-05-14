@@ -80,7 +80,7 @@
         // ;, shift: :
         force_COLON: force_COLON {
             compatible = "zmk,behavior-mod-morph";
-            label = "jis_COLON";
+            label = "force_COLON";
             #binding-cells = <0>;
             bindings = <&kp JP_COLON>, <&kp JP_COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
