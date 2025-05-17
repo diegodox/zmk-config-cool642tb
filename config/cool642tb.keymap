@@ -69,6 +69,57 @@
     };
 
     behaviors {
+        // \ , shift: |
+        jis_BACKSLASH: jis_BACKSLASH {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_BACKSLASH";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSLASH>, <&kp JP_PIPE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // = , shift: +
+        jis_EQUAL: jis_EQUAL {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_EQUAL";
+            #binding-cells = <0>;
+            bindings = <&kp JP_EQUAL>, <&kp JP_PLUS>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // ' , shift: "
+        jis_QUOTE: jis_QUOTE {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp JP_QUOTE>, <&kp JP_DQUOTE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // `, shift: ~
+        jis_BQUOTE: jis_BQUOTE {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_BQUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp JP_BACKQUOTE>, <&kp JP_TILDE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // -, shift: _
+        jis_MINUS: jis_MINUS {
+            compatible = "zmk,behavior-mod-morph";
+            label = "jis_MINUS";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp JP_UNDERSCORE>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
+
         // [ , shift: {
 
         jis_LBKT: jis_LBKT {
