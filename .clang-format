@@ -1,0 +1,18 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+UseTab: Never
+BreakBeforeBraces: Attach
+AllowShortBlocksOnASingleLine: true
+AlignAfterOpenBracket: Align
+ColumnLimit: 0
+PenaltyBreakBeforeFirstCallParameter: 10000
+PenaltyBreakAssignment: 10000
+AlignTrailingComments: true
+AlignConsecutiveMacros:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: false
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: false
