@@ -138,7 +138,7 @@
             bindings = <
 &kp EXCL  &kp JP_AT  &kp HASH  &kp DLLR  &kp PRCNT                                   &kp CARET   &kp AMPS  &kp JP_ASTRK   &kp JP_LPAREN   &kp JP_RPAREN
 &kp N1    &kp N2     &kp N3    &kp N4    &kp N5     &trans         &trans            &trans      &trans    &trans         &trans          &tapmodcolon RCTRL SEMI
-&kp N6    &kp N7     &kp N8    &kp N9    &kp N0     &kp JP_RBRACE  &kp JP_LBRACE     &trans      &trans    &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
+&kp N6    &kp N7     &kp N8    &kp N9    &kp N0     &kp JP_LBRACE  &kp JP_RBRACE     &trans      &trans    &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
 &trans    &trans     &trans    &trans    &trans     &trans         &kp INT_MUHENKAN  &kp ESCAPE                                           &kp LS(MINUS)
             >;
 
@@ -149,7 +149,7 @@
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                          &kp F6    &kp F7          &kp F8         &kp F9          &kp F10
 &trans  &trans  &trans  &trans  &trans      &trans               &trans         &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT       &kp JP_COLON
-&trans  &trans  &trans  &trans  &trans      &kp JP_RBRACE        &kp JP_LBRACE  &trans    &trans          &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
+&trans  &trans  &trans  &trans  &trans      &kp JP_LBRACE        &kp JP_RBRACE  &trans    &trans          &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
 &trans  &trans  &trans  &trans  &kp ESCAPE  &kp INTERNATIONAL_4  &trans         &trans                                                   &kp LS(MINUS)
             >;
 
