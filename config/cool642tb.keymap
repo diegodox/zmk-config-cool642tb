@@ -196,10 +196,10 @@
 
         right {
             bindings = <
-&kp F1        &kp F2             &kp F3  &kp F4  &kp F5                                          &kp F6       &kp F7            &kp F8         &kp F9                 &kp F10
-&mt LCTRL F1  &mt LEFT_SHIFT F2  &kp F3  &kp F4  &kp F5      &trans               &jis_BQUOTE    &kp LEFT     &kp DOWN_ARROW    &kp UP_ARROW   &mt RIGHT_SHIFT RIGHT  &tapmodcolon RCTRL SEMI
-&trans        &trans             &trans  &trans  &trans      &kp JP_LBRACE        &kp JP_RBRACE  &kp JP_PIPE  &kp JP_BACKSLASH  &kp LS(COMMA)  &kp LS(PERIOD)         &kp LS(SLASH)
-&trans        &trans             &trans  &trans  &kp ESCAPE  &kp INTERNATIONAL_4  &trans         &trans                                                               &trans
+&kp F1        &kp F2             &kp F3  &kp F4  &kp F5                                          &kp F6       &kp F7          &kp F8         &kp F9                 &kp F10
+&mt LCTRL F1  &mt LEFT_SHIFT F2  &kp F3  &kp F4  &kp F5      &trans               &jis_BQUOTE    &kp LEFT     &kp DOWN_ARROW  &kp UP_ARROW   &mt RIGHT_SHIFT RIGHT  &tapmodcolon RCTRL SEMI
+&trans        &trans             &trans  &trans  &trans      &kp JP_LBRACE        &kp JP_RBRACE  &kp JP_PIPE  &kp BACKSLASH   &kp LS(COMMA)  &kp LS(PERIOD)         &kp LS(SLASH)
+&trans        &trans             &trans  &trans  &kp ESCAPE  &kp INTERNATIONAL_4  &trans         &trans                                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
