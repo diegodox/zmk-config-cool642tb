@@ -6,7 +6,7 @@
 #define SCROLL 5
 #define NUM    6
 
-#include "./jis.h"
+#include <jis.dtsi>
 
 &mt {
     flavor = "balanced";
