@@ -175,9 +175,9 @@
         default_layer {
             bindings = <
 &kp Q        &kp W             &kp E           &kp R   &kp T                                 &kp Y       &kp U  &kp I            &kp O              &kp P
-&mt LCTRL A  &mt LEFT_SHIFT S  &mt LEFT_GUI D  &kp F   &kp G           &trans     &jis_BQUOTE &kp H       &kp J  &mt RIGHT_GUI K  &mt RIGHT_SHIFT L  &tapmodcolon RCTRL SEMI
+&mt LCTRL A  &mt LEFT_SHIFT S  &kp D  &kp F   &kp G           &trans     &jis_BQUOTE &kp H       &kp J  &kp K  &mt RIGHT_SHIFT L  &tapmodcolon RCTRL SEMI
 &kp Z        &kp X             &kp C           &kp V   &kp B           &jis_LBKT  &jis_RBKT  &kp N       &kp M  &kp COMMA        &kp PERIOD         &kp SLASH
-&trans       &trans            &trans          &trans  &lt 1 LEFT_ALT  &kp SPACE  &kp ENTER  &lt 2 BKSP                                             &mo 3
+&trans       &trans            &trans          &trans  &lt 1 LEFT_GUI  &kp SPACE  &kp ENTER  &lt 2 BKSP                                             &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -186,8 +186,8 @@
         left {
             bindings = <
 &kp EXCL  &kp JP_AT  &kp HASH  &kp DLLR  &kp PRCNT                                   &kp CARET   &kp AMPS  &kp JP_ASTRK   &kp JP_LPAREN   &kp JP_RPAREN
-&kp N1    &kp N2     &kp N3    &kp N4    &kp N5     &trans         &trans            &trans      &trans    &trans         &trans          &tapmodcolon RCTRL SEMI
-&kp N6    &kp N7     &kp N8    &kp N9    &kp N0     &kp JP_LBRACE  &kp JP_RBRACE     &trans      &trans    &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
+&mt LCTRL N1    &mt LEFT_SHIFT N2     &kp N3    &kp N4    &kp N5     &trans         &trans            &trans      &trans    &trans &kp RIGHT_SHIFT  &tapmodcolon RCTRL SEMI
+&kp N6    &kp N7     &kp N8    &kp N9    &kp N0     &kp JP_LBRACE  &kp JP_RBRACE     &jis_EQUAL      &jis_QUOTE    &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
 &trans    &trans     &trans    &trans    &trans     &trans         &kp INT_MUHENKAN  &kp ESCAPE                                           &kp LS(MINUS)
             >;
 
@@ -197,8 +197,8 @@
         right {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                          &kp F6    &kp F7          &kp F8         &kp F9          &kp F10
-&trans  &trans  &trans  &trans  &trans      &trans               &trans         &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT       &kp JP_COLON
-&trans  &trans  &trans  &trans  &trans      &kp JP_LBRACE        &kp JP_RBRACE  &trans    &trans          &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
+&mt LCTRL F1  &mt LEFT_SHIFT F2  &kp F3  &kp F4  &kp F5      &trans               &trans         &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &mt RIGHT_SHIFT RIGHT       &tapmodcolon RCTRL SEMI
+&trans  &trans  &trans  &trans  &trans      &kp JP_LBRACE        &kp JP_RBRACE  &kp JP_PIPE  &kp JP_BACKSLASH          &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
 &trans  &trans  &trans  &trans  &kp ESCAPE  &kp INTERNATIONAL_4  &trans         &trans                                                   &kp LS(MINUS)
             >;
 
