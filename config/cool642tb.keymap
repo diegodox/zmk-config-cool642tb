@@ -134,11 +134,11 @@
         };
 
         config {
-            binidngs = <
-&trnas       &trans     &trnas      &trans      &trans                          /**/                          &trans      &trans          &trans         &trans          &trans
-&trans       &trans     &trans      &trans      &trans             &trans       /**/      &trans              &trans      &trans          &trans         &trans          &trans
-&trans       &trans     &trans      &trans      &trans             &trans       /**/      &trans              &trans      &trans          &trans         &trans          &trans
-&trans       &trans     &trans      &trans      &trans             &trans       /**/      &trans              &trans                                                     &trans
+            bindings = <
+&kp F1       &kp F2     &kp F3      &kp F4      &kp F5                      /**/                   &trans      &kp U             &kp I            &kp O             &kp P
+&trans       &trans     &trans      &trans      &trans         &trans       /**/      &trans       &kp LEFT    &kp DOWN_ARROW    &kp UP_ARROW     &kp RIGHT         &kp COLON
+&trans       &trans     &trans      &trans      &trans         &kp LBRC     /**/      &kp RBRC     &trans      &trans            &kp LS(COMMA)    &kp LS(PERIOD)    &kp LS(SLASH)
+&trans       &trans     &trans      &trans      &kp ESCAPE     &trans       /**/      &trans       &trans                                                           &kp LS(MINUS)
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
