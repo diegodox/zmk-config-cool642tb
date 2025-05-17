@@ -126,10 +126,10 @@
 
         left {
             bindings = <
-&kp EXCL  &kp JP_AT  &kp HASH  &kp DLLR  &kp PRCNT                      &kp CARET   &kp AMPS  &kp JP_ASTRK   &kp JP_LPAREN   &kp JP_RPAREN
-&kp N1    &kp N2     &kp N3    &kp N4    &kp N5     &trans    &trans    &trans      &trans    &trans         &trans          &tapmodcolon RCTRL SEMI
-&kp N6    &kp N7     &kp N8    &kp N9    &kp N0     &kp LBRC  &kp RBRC  &trans      &trans    &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
-&trans    &trans     &trans    &trans    &trans     &trans    &trans    &kp ESCAPE                                           &kp LS(MINUS)
+&kp EXCL  &kp JP_AT  &kp HASH  &kp DLLR  &kp PRCNT                                &kp CARET   &kp AMPS  &kp JP_ASTRK   &kp JP_LPAREN   &kp JP_RPAREN
+&kp N1    &kp N2     &kp N3    &kp N4    &kp N5     &trans         &trans         &trans      &trans    &trans         &trans          &tapmodcolon RCTRL SEMI
+&kp N6    &kp N7     &kp N8    &kp N9    &kp N0     &kp JP_RBRACE  &kp JP_LBRACE  &trans      &trans    &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
+&trans    &trans     &trans    &trans    &trans     &trans         &trans         &kp ESCAPE                                           &kp LS(MINUS)
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -137,10 +137,10 @@
 
         right {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                          &trans    &kp U           &kp I          &kp O           &kp P
-&trans  &trans  &trans  &trans  &trans      &trans    &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT       &kp COLON
-&trans  &trans  &trans  &trans  &trans      &kp LBRC  &kp RBRC  &trans    &trans          &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
-&trans  &trans  &trans  &trans  &kp ESCAPE  &trans    &trans    &trans                                                   &kp LS(MINUS)
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                    &trans    &kp U           &kp I          &kp O           &kp P
+&trans  &trans  &trans  &trans  &trans      &trans         &trans         &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT       &kp COLON
+&trans  &trans  &trans  &trans  &trans      &kp JP_RBRACE  &kp JP_LBRACE  &trans    &trans          &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(SLASH)
+&trans  &trans  &trans  &trans  &kp ESCAPE  &trans         &trans         &trans                                                   &kp LS(MINUS)
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
