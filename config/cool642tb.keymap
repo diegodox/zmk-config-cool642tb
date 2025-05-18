@@ -122,8 +122,6 @@
             bindings = <&kp MINUS>, <&kp JP_UNDERSCORE>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-
-            // [ , shift: {
         };
 
         ht_jis_MINUS: ht_jis_MINUS {
@@ -136,6 +134,8 @@
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
         };
+
+        // [ , shift: {
 
         jis_LBKT: jis_LBKT {
             compatible = "zmk,behavior-mod-morph";
